@@ -11,24 +11,46 @@
 
 .heading { 
     display: flex;
-    font-size: 30px;
-    margin-left: 200px; 
-    padding-top: 20px;
+    flex-direction: column;
+    
+}
+
+.heading__position {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .heading__logo {
-    padding-right: 300px;
-    font-weight: 600;
+    display: flex;
+    margin-left: 200px;
+    padding-right: 400px;
+    font-size: 30px;
+   /* style */
 }
 
 .heading__list {
-    display: flex;
-    gap: 50px;
-    text-transform: uppercase;
-    list-style: none;
-    font-size: 15px;
-    margin: 0;
+   display: flex;
+   gap: 50px;
+   list-style: none;
 }
+
+.heading__item {
+    color: white;
+    text-transform: uppercase;
+}
+
+.heading__svg {
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
 
 .banner {
     text-align: center;
