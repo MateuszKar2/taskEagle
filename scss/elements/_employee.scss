@@ -1,0 +1,151 @@
+.employee {
+  text-align: center;
+  width: 100%;
+  max-width: 380px;
+
+  @include media(tablet) {
+    margin: 0 15px;
+  }
+
+  @include media(desktop) {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  &__underlay {
+    margin-bottom: 30px;
+    background-color: $color-blue;
+  }
+
+  &__photo {
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    height: 470px;
+    transition: .5s ease-out;
+
+    @include media(laptop) {
+      align-items: center;
+    }
+
+    &:hover {
+      transform: translate(-10px, -10px);
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $color-gradient-primary;
+        animation: opacityChange 0.5s ease 0s 1 normal forwards;
+      }
+    }
+
+    &:hover .employee__social-element .employee__social-link {
+      opacity: 1;
+    }
+
+    &--first {
+      background: url("../assets/img/TEAM-1.jpg") no-repeat;
+
+      @include retinaScreen {
+        background: url("../assets/img/TEAM-1@2x.jpg");
+        background-size: cover;
+      }
+    }
+
+    &--second {
+      background: url("../assets/img/TEAM-2.jpg") no-repeat;
+
+      @include retinaScreen {
+        background: url("../assets/img/TEAM-2@2x.jpg");
+        background-size: cover;
+      }
+    }
+
+    &--third {
+      background: url("../assets/img/TEAM-3.jpg") no-repeat;
+
+      @include retinaScreen {
+        background: url("../assets/img/TEAM-3@2x.jpg");
+        background-size: cover;
+      }
+    }
+  }
+
+  &__social {
+    display: grid;
+    grid-auto-flow: column;
+    position: relative;
+    margin-bottom: 20px;
+
+    @include media(laptop) {
+      margin-bottom: 0;
+    }
+
+    &-element {
+      margin-right: 1px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &-link {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      background-color: $color-orange;
+      color: $color-pink;
+      transition: .2s ease-out;
+      opacity: 1;
+
+      @include media(laptop) {
+        opacity: 0;
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+      }
+
+      &:hover {
+        background-color: $color-pink;
+        color: $color-orange;
+      }
+    }
+  }
+
+  &__name {
+    font-family: $font-montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    @include media(laptop) {
+      font-size: 14px;
+    }
+  }
+
+  &__position {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 13px;
+    color: $color-text-secondary;
+
+    @include media(laptop) {
+      margin-top: 15px;
+      font-size: 15px;
+    }
+
+    @include media(desktop) {
+      margin-bottom: 80px;
+    }
+  }
+}

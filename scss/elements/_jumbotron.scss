@@ -1,0 +1,81 @@
+.jumbotron {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: $color-white;
+  text-align: center;
+
+  @include media(laptop) {
+    padding: 100px 0 140px;
+  }
+
+  @include media(desktop) {
+    padding: 180px 0 180px;
+    height: 100vh;
+  }
+
+  &__subheading {
+    font-family: $font-kaushan;
+    font-size: 28px;
+
+    @include media(tablet) {
+      font-size: 36px;
+    }
+
+    @include media(laptop) {
+      font-size: 50px;
+    }
+
+    @include media(desktop) {
+      font-size: 72px;
+    }
+  }
+
+  &__heading {
+    margin: 20px 0 40px;
+    font-family: $font-montserrat;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 44px;
+    text-transform: uppercase;
+
+    @include media(tablet) {
+      font-size: 60px;
+      line-height: 50px;
+    }
+
+    @include media(laptop) {
+      font-size: 80px;
+      line-height: 74px;
+    }
+
+    @include media(desktop) {
+      margin: 40px 0 120px;
+      font-size: 150px;
+      line-height: 140px;
+    }
+  }
+
+  &__cta {
+    padding: 5px 15px;
+    font-family: $font-montserrat;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    border: 2px solid $color-white;
+    transition: .3s ease-out;
+
+    @include media(laptop) {
+      font-size: 14px;
+      padding: 10px 30px;
+    }
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-black;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.navigation {
+
+  &__btn {
+    display: none;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    opacity: 0;
+
+    @include media(mobile) {
+      &:checked {
+
+        ~ .navigation__list {
+          display: flex;
+
+          @include media(laptop) {
+            display: grid;
+          }
+        }
+
+        ~ .navigation__toggle {
+          span {
+            &:nth-child(1) {
+              transform: rotate(45deg) translate(2px, 5px);
+            }
+
+            &:nth-child(2) {
+              opacity: 0;
+            }
+
+            &:nth-child(3) {
+              transform: rotate(-45deg) translate(2px, -5px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__toggle {
+    display: block;
+
+    span {
+      width: 20px;
+      height: 2px;
+      display: block;
+      margin-bottom: 3px;
+      background-color: $color-white;
+      transition: .3s all ease-in-out;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include media(laptop) {
+      display: none;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 60px;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+    animation: scaleIn 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    @include media(laptop) {
+      display: grid;
+      grid-auto-flow: column;
+      position: relative;
+      top: 0;
+    }
+  }
+
+  &__element {
+    margin: 7px 0;
+    font-family: $font-montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    @include media(laptop) {
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    @include media(desktop) {
+      margin-right: 50px;
+    }
+
+    &--icon {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    padding-bottom: 10px;
+    transition: .3s ease-out;
+
+    @include media(laptop) {
+      border: 2px solid rgba(0, 0, 0, 0);
+    }
+
+    &:hover {
+      color: $color-orange;
+      @include media(laptop) {
+        border-bottom: 2px solid $color-orange;
+      }
+    }
+  }
+}

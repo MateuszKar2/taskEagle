@@ -1,0 +1,79 @@
+.footer {
+  &__wrapper {
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid $color-text-secondary;
+
+    @include media(laptop) {
+      height: 60px;
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__copy {
+    font-family: $font-montserrat;
+    font-size: 12px;
+    margin: 20px 0;
+
+    @include media(tablet) {
+      font-size: 14px;
+    }
+
+    @include media(laptop) {
+      margin: 0;
+    }
+  }
+
+  &__author {
+    color: $color-pink;
+  }
+
+  &__subscribe {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @include media(laptop) {
+      justify-content: normal;
+      margin: 0;
+    }
+  }
+
+  &__input {
+    width: 180px;
+    height: 30px;
+    padding: 10px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 12px;
+    border: 1px solid $color-text-secondary;
+    border-right: none;
+
+    @include media(tablet) {
+      width: 230px;
+      height: 40px;
+      padding: 12px;
+      font-size: 15px;
+    }
+  }
+
+  &__button {
+    padding: 5px 30px;
+    font-family: $font-montserrat;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: $color-blue;
+    color: $color-white;
+    border: none;
+    text-transform: uppercase;
+
+    @include media(tablet) {
+      padding: 11px 35px;
+      font-size: 14px;
+    }
+  }
+}

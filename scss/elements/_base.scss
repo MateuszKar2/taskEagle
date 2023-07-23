@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333333;
+  font-family: $font-roboto;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include media(desktop) {
+    max-width: 1200px;
+    padding: 0;
+  }
+}
