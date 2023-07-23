@@ -1,244 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" />
-    <title>Eagle</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" />
+    <title>MoGo | Eagle</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__nav">
-                <a href="#" class="header__logo">MoGo</a>
-                <nav class="heading">
-                    <input type="checkbox" class="heading__btn" id="heading__btn">
-                    <label for="heading__btn" class="heading__toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                    <ul class="heading__list"></ul>
-                        <li class="heading__element">
-                            <a href="#about" class="heading__link">about</a>
-                        </li>
-                        <li class="heading__element">
-                            <a href="#service" class="heading__link">service</a>
-                        </li>
-                        <li class="heading__element">
-                            <a href="#work" class="heading__link">work</a>
-                        </li>
-                        <li class="heading__element">
-                            <a href="#blog" class="heading__link">blog</a>
-                        </li>
-                        <li class="heading__element">
-                            <a href="#contact" class="heading__link">contact</a>
-                        </li>
-                        <li class="heading__element heading__element--icon">
-                            <a href="#shop" class="heading__link">
-                                <i class="mdi mdi-cart-outline"></i>
-                            </a>
-                        </li>
-                        <li class="heading__element heading__element--icon">
-                            <a href="#search" class="heading__link"> 
-                                <i class="mdi mdi-magnify"></i> 
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-                <div class="banner">
-                    <h2 class="banner__subtitle">creative template</h2>
-                    <h1 class="banner__title">welcome to mogo</h1>
-                    <a class="banner__cta" href="#">Learn More</a>
+<header class="header">
+    <div class="container">
+        <div class="header__nav">
+            <a href="#" class="header__logo">MoGo</a>
+            <nav class="heading">
+                <input type="checkbox" class="heading__btn" id="heading__btn">
+                <label for="heading__btn" class="heading__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="heading__list">
+                    <li class="heading__element"><a href="#about" 
+                        class="heading__link">about</a></li>
+                    <li class="heading__element"><a href="#service" 
+                        class="heading__link">service</a></li>
+                    <li class="heading__element"><a href="#work" 
+                        class="heading__link">work</a></li>
+                    <li class="heading__element"><a href="#blog" 
+                        class="heading__link">blog</a></li>
+                    <li class="heading__element"><a href="#contact" 
+                        class="heading__link">contact</a></li>
+                    <li class="heading__element heading__element--icon"><a href="#shop" 
+                        class="heading__link"><i class="mdi mdi-cart-outline"></i></a></li>
+                    <li class="heading__element heading__element--icon"><a href="#search" 
+                        class="heading__link"><i class="mdi mdi-magnify"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <h2 class="banner__subheading">Creative Template</h2>
+            <h1 class="banner__heading">Welcome <br> to MoGo</h1>
+            <a class="banner__cta" href="#">Learn More</a>
+        </div>
+    </div>
+</header>
+<section class="work">
+    <div class="container">
+        <header class="typography">
+            <h4 class="typography__subheading">We work with</h4>
+            <h3 class="typography__heading">Amazing Services</h3>
+        </header>
+        <div class="work__grid">
+            <div class="work__box">
+                <i class="work__icon mdi mdi-alarm"></i>
+                <div class="work__content">
+                    <h5 class="work__title">photography</h5>
+                    <p class="work__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
             </div>
-    </header>
-    <main>
-        <section class="work">
-            <div class="container">
-                <header class="typography">
-                    <h4 class="typography__subtitle">We work with</h4>
-                    <h3 class="typography__title">Amazing work</h3>
-                </header>
-                <div class="work__grid">
-                    <div class="work__box">
-                        <i class="work__icon mdi mdi-alarm"></i>
-                        <div class="work__content">
-                            <h5 class="work__title">photography</h5>
-                            <p class="work__description">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor.
-                            </p>
-                    </div>
-                    </div>
-                    <div class="work__box">
-                        <i class="work__icon mdi mdi-alarm"></i>
-                        <div class="work__content">
-                             <h5 class="work__title">web design</h5>
-                            <p class="work__description">
-                                Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="work__box">
-                        <i class="work__icon mdi mdi-alarm"></i>
-                        <div class="work__content">
-                            <h5 class="work__title">creativity</h5>
-                            <p class="work__description">
-                                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="work__box">
-                        <i class="work__icon mdi mdi-alarm"></i>
-                        <div class="work__content">
-                            <h5 class="work__title">seo</h5>
-                            <p class="work__description">
-                                Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="work__box">
-                        <i class="work__icon mdi mdi-alarm"></i>
-                        <div class="work__content">
-                            <h5 class="work__title">css/html</h5>
-                            <p class="work__description">
-                                Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="work__box">
-                        <i class="work__icon mdi mdi-alarm"></i>
-                        <div class="work__content">
-                            <h5 class="work__title">digital</h5>
-                            <p class="work__description">
-                                Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                            </p>
-                        </div>
-                    </div>
+            <div class="work__box">
+                <i class="work__icon mdi mdi-chart-line"></i>
+                <div class="work__content">
+                    <h5 class="work__title">web design</h5>
+                    <p class="work__description">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
             </div>
-        </section>    
-        <section class="team">
-            <div class="container"></div>
-            <header class="typography">
-                <h4 class="typography__subtitle">Who we are</h4>
-                <h3 class="typography__title">Meet our team</h3>
-            </header>
-            <div class="team__description">
-                <p class="team__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="work__box">
+                <i class="work__icon mdi mdi-monitor-edit"></i>
+                <div class="work__content">
+                    <h5 class="work__title">creativity</h5>
+                    <p class="work__description">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
             </div>
-            <div class="team__grid">
-                <figure class="person">
-                    <div class="person__underlay">
-                        <div class="person__photo person__photo--first">
-                            <ul class="person__social">
-                                <li class="person__social-element">
-                                    <a href="#facebook" class="person__social-link">
-                                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="person__social-element">
-                                    <a href="#twitter" class="person__social-link">
-                                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="person__social-element">
-                                    <a href="#pinterest" class="person__social-link">
-                                        <i class="fa-brands fa-pinterest-p" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="person__social-element">
-                                    <a href="#instagram" class="person__social-link">
-                                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <figurecaption class="person__name">Matthew Dix</figurecaption>
-                    <p class="person__position">Graphic Design</p>
-                </figure>
-                <figure class="person">
-                    <div class="person__underlay">
-                        <div class="person__photo person__photo--second">
-                            <ul class="person__social">
-                                <li class="person__social-element">
-                                    <a href="#facebook" class="person__social-link">
-                                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="person__social-element">
-                                    <a href="#twitter" class="person__social-link">
-                                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="person__social-element">
-                                    <a href="#pinterest" class="person__social-link">
-                                        <i class="fa-brands fa-pinterest-p" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="person__social-element">
-                                    <a href="#instagram" class="person__social-link">
-                                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <figurecaption class="person__name">Matthew Dix</figurecaption>
-                    <p class="person__position">Graphic Design</p>
-                </figure>
-                <figure class="person">
-                    <div class="person__underlay">
-                        <div class="person__photo person__photo--third">
-                            <ul class="person__social">
-                                <li class="person__social-element">
-                                    <a href="#facebook" class="person__social-link">
-                                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="person__social-element">
-                                    <a href="#twitter" class="person__social-link">
-                                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="person__social-element">
-                                    <a href="#pinterest" class="person__social-link">
-                                        <i class="fa-brands fa-pinterest-p" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="person__social-element">
-                                    <a href="#instagram" class="person__social-link">
-                                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <figurecaption class="person__name">Matthew Dix</figurecaption>
-                    <p class="person__position">Graphic Design</p>
-                </figure>
+            <div class="work__box">
+                <i class="work__icon mdi mdi-book-open-variant"></i>
+                <div class="work__content">
+                    <h5 class="work__title">seo</h5>
+                    <p class="work__description">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <p class="footer__copy">© 2016 MoGo free PSD template by <span class="footer__author">Laaqiq</span></p>
-                <div class="footer__subscribe">
-                    <input class="footer__input" type="text" placeholder="Your email...">
-                    <button class="footer__button">subscibe</button>
+            <div class="work__box">
+                <i class="work__icon mdi mdi-home-variant-outline"></i>
+                <div class="work__content">
+                    <h5 class="work__title">css/html</h5>
+                    <p class="work__description">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
+                </div>
+            </div>
+            <div class="work__box">
+                <i class="work__icon mdi mdi-image-frame"></i>
+                <div class="work__content">
+                    <h5 class="work__title">digital</h5>
+                    <p class="work__description">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+<section class="team">
+    <div class="container">
+        <header class="typography">
+            <h4 class="typography__subheading">Who we are</h4>
+            <h3 class="typography__heading">Meet our team</h3>
+        </header>
+        <div class="team__description">
+            <p class="team__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="team__grid">
+            <figure class="person">
+                <div class="person__underlay">
+                    <div class="person__photo person__photo--first">
+                        <ul class="person__social">
+                            <li class="person__social-element">
+                                <a href="#facebook" class="person__social-link">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="person__social-element">
+                                <a href="#twitter" class="person__social-link">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="person__social-element">
+                                <a href="#pinterest" class="person__social-link">
+                                    <i class="fa-brands fa-pinterest-p" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="person__social-element">
+                                <a href="#instagram" class="person__social-link">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <figcaption class="person__name">Matthew Dix</figcaption>
+                <p class="person__position">Graphic Design</p>
+            </figure>
+            <figure class="person">
+                <div class="person__underlay">
+                    <div class="person__photo person__photo--second">
+                        <ul class="person__social">
+                            <li class="person__social-element">
+                                <a href="#facebook" class="person__social-link">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="person__social-element">
+                                <a href="#twitter" class="person__social-link">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="person__social-element">
+                                <a href="#pinterest" class="person__social-link">
+                                    <i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="person__social-element">
+                                <a href="#instagram" class="person__social-link">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <figcaption class="person__name">Christopher Campbell</figcaption>
+                <p class="person__position">Branding/UX design</p>
+            </figure>
+            <figure class="person">
+                <div class="person__underlay">
+                    <div class="person__photo person__photo--third">
+                        <ul class="person__social">
+                            <li class="person__social-element">
+                                <a href="#facebook" class="person__social-link">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="person__social-element">
+                                <a href="#twitter" class="person__social-link">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="person__social-element">
+                                <a href="#pinterest" class="person__social-link">
+                                    <i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="person__social-element">
+                                <a href="#instagram" class="person__social-link">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <figcaption class="person__name">Michael Fertig</figcaption>
+                <p class="person__position">Developer</p>
+            </figure>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <p class="footer__copy">© 2016 MoGo free PSD template by <span class="footer__author">Laaqiq</span></p>
+            <div class="footer__subscribe">
+                <input class="footer__input" type="text" placeholder="Your email...">
+                <button class="footer__button">subscribe</button>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
