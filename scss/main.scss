@@ -3,12 +3,12 @@
 // settings
 @import "settings/index";
 // elements
+@import "elements/banner";
 @import "elements/base";
+@import "elements.footer";
 @import "elements/header";
 @import "elements/heading";
-@import "elements/banner";
+@import "elements/person";
+@import "elements/team";
 @import "elements/typography";
 @import "elements/work";
-@import "elements/team";
-@import "elements/person";
-@import "elements/footer";
