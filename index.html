@@ -2,74 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link/>
+    <link/>
     <title>Eagle</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <section class="heading">
-                <div class="heading__position">
-                <div class="heading__logo">
-                    MoGo
-                </div>
-                    <nav>
-                        <ul class="heading__list">
-                            <li class="heading__item">
+            <div class="header__nav">
+                <a href="#" class="header__logo">MoGo</a>
+                <nav class="heading">
+                    <input type="checkbox" class="heading__btn" id="heading__btn">
+                    <label for="heading__btn" class="heading__toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <ul class="heading__list"></ul>
+                        <li class="heading__element">
                             <a href="#about" class="heading__link">about</a>
-                            </li>
-                            <li class="heading__item">
-                                <a href="#service" class="heading__link">service</a>
-                            </li>
-                            <li class="heading__item">
-                                <a href="#work" class="heading__link">work</a>
-                            </li>
-                            <li class="heading__item">
-                                <a href="#blog" class="heading__link">blog</a>
-                            </li>
-                            <li class="heading__item">
-                                <a href="#contact" class="heading__link">contact</a>
-                            </li>
-                            <li>
-                                <a href="#shop" class="heading__link--icon">
-                                    <svg class="heading__svg heading__item">
-                                        <use 
-                                        xlink:href="./images/icons.svg#icon-shopping"
-                                        width="20";
-                                        height="20";
-                                        ></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#search" class="heading__link--icon">
-                                    <svg class="heading__svg heading__item">
-                                        <use
-                                        xlink:href="./images/icons.svg#icon-search"
-                                        width="20";
-                                        height="20";
-                                        ></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                        </li>
+                        <li class="heading__element">
+                            <a href="#service" class="heading__link">service</a>
+                        </li>
+                        <li class="heading__element">
+                            <a href="#work" class="heading__link">work</a>
+                        </li>
+                        <li class="heading__element">
+                            <a href="#blog" class="heading__link">blog</a>
+                        </li>
+                        <li class="heading__element">
+                            <a href="#contact" class="heading__link">contact</a>
+                        </li>
+                        <li class="heading__element heading__element--icon">
+                            <a href="#shop" class="heading__link">
+                                <!-- <i class="mdi mdi-magnify"></i> -->
+                            </a>
+                        </li>
+                        <li class="heading__element heading__element--icon">
+                            <a href="#search" class="heading__link"> 
+                                <!-- <i class="mdi mdi-magnify"></i> -->
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
                 <div class="banner">
                     <h2 class="banner__subtitle">creative template</h2>
                     <h1 class="banner__title">welcome to mogo</h1>
-                    <button type="button" class="banner__button">learn more</button>
+                    <a class="banner__cta" href="#">Learn More</a>
                 </div>
-            </section>
-        </div>
+            </div>
     </header>
     <main>
         <section class="work">
-            <h4 class="work__subtitle">We work with</h3>
-            <h3 class="work__title">amazing services</h3>
-            <ul>
-                <li>
+            <div class="container">
+                <header class="topography">
+                    <h4 class="topography__subtitle">We work with</h4>
+                    <h3 class="topography__title">Amazing services</h3>
+                </header>
+                <div class="work__grid">
+                    <div class="work__box">
+                        <i class="work__icon mdi mdi-alarm"></i>
+                        <div class="work__content">
+                            <h5 class="work__title">photography</h5>
+                            <p class="work__description">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor.
+                            </p>
+                    </div>
+                    </div>
+                    <div class="work__box">
+                        <i class="work__icon mdi mdi-alarm"></i>
+                        <div class="work__content">
+                             <h5 class="work__title">web design</h5>
+                            <p class="work__description">
+                                Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work__box">
+                        <i class="work__icon mdi mdi-alarm"></i>
+                        <div class="work__content">
+                            <h5 class="work__title">creativity</h5>
+                            <p class="work__description">
+                                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work__box">
+                        <i class="work__icon mdi mdi-alarm"></i>
+                        <div class="work__content">
+                            <h5 class="work__title">seo</h5>
+                            <p class="work__description">
+                                Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work__box">
+                        <i class="work__icon mdi mdi-alarm"></i>
+                        <div class="work__content">
+                            <h5 class="work__title">css/html</h5>
+                            <p class="work__description">
+                                Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work__box">
+                        <i class="work__icon mdi mdi-alarm"></i>
+                        <div class="work__content">
+                            <h5 class="work__title">digital</h5>
+                            <p class="work__description">
+                                Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- <li>
                     <svg class="">
                         <use
                         xlink:href="./images/icons.svg#icon-clock"
@@ -80,80 +134,112 @@
                     <h5>photography</h5>           
                     </svg>
                     <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor.</div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <svg class="">
-                        <use
-                        xlink:href="./images/icons.svg#icon-paper"
-                        width="20"
-                        height="20"
-                        ></use>
-                    </svg>
-                    <h5>web design</h5>
-                    <div>Ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor.</div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <svg class="">
-                        <use
-                        xlink:href="./images/icons.svg#icon-screen"
-                        width="20"
-                        height="20"
-                        ></use>
-                    </svg>
-                    <div>Dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor.</div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <svg class="">
-                        <use
-                        xlink:href="./images/icons.svg#icon-book"
-                        width="20"
-                        height="20"
-                        ></use>
-                    </svg>
-                    <h5>seo</h5>
-                    <div>Ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod.</div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <svg class="">
-                        <use
-                        xlink:href="./images/icons.svg#icon-home"
-                        width="20"
-                        height="20"
-                        ></use>
-                    </svg>
-                    <h5>css/html</h5>
-                    <div>Lorem dolor sit amet consectetur adipisicing elit, sed do tempor.</div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <svg class="">
-                        <use
-                        xlink:href="./images/icons.svg#icon-frame"
-                        width="20"
-                        height="20"
-                        ></use>
-                    </svg>
-                    <h5>digital</h5>
-                    <div>Sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
-                </li>
-            </ul>
-        </section>
+                </li> -->
+            
         <section class="team">
-            <h4 class="team__subtitle">Who we are</h3>
-            <h3 class="team__title">meet our team</h3>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            <div class="container"></div>
+            <header class="topography">
+                <h4 class="topography__subtitle">Who we are</h4>
+                <h3 class="topography__title">Meet our team</h3>
+            </header>
+            <div class="team__description">
+                <p class="team__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <figure>
+            <div class="team__grid">
+                <figure class="person">
+                    <div class="person__underlay">
+                        <div class="person__photo person__photo--first">
+                            <ul class="person__social">
+                                <li class="person__social-element">
+                                    <a href="#facebook" class="person__social-link">
+                                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="person__social-element">
+                                    <a href="#twitter" class="person__social-link">
+                                        <i class="fa-brands fa-twitter-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="person__social-element">
+                                    <a href="#pinterest" class="person__social-link">
+                                        <i class="fa-brands fa-pinterest-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="person__social-element">
+                                    <a href="#instagram" class="person__social-link">
+                                        <i class="fa-brands fa-instagram-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <figurecaption class="person__name">Matthew Dix</figurecaption>
+                    <p class="person__position">Graphic Design</p>
+                </figure>
+                <figure class="person">
+                    <div class="person__underlay">
+                        <div class="person__photo person__photo--second">
+                            <ul class="person__social">
+                                <li class="person__social-element">
+                                    <a href="#facebook" class="person__social-link">
+                                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="person__social-element">
+                                    <a href="#twitter" class="person__social-link">
+                                        <i class="fa-brands fa-twitter-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="person__social-element">
+                                    <a href="#pinterest" class="person__social-link">
+                                        <i class="fa-brands fa-pinterest-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="person__social-element">
+                                    <a href="#instagram" class="person__social-link">
+                                        <i class="fa-brands fa-instagram-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <figurecaption class="person__name">Matthew Dix</figurecaption>
+                    <p class="person__position">Graphic Design</p>
+                </figure>
+                <figure class="person">
+                    <div class="person__underlay">
+                        <div class="person__photo person__photo--third">
+                            <ul class="person__social">
+                                <li class="person__social-element">
+                                    <a href="#facebook" class="person__social-link">
+                                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="person__social-element">
+                                    <a href="#twitter" class="person__social-link">
+                                        <i class="fa-brands fa-twitter-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="person__social-element">
+                                    <a href="#pinterest" class="person__social-link">
+                                        <i class="fa-brands fa-pinterest-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="person__social-element">
+                                    <a href="#instagram" class="person__social-link">
+                                        <i class="fa-brands fa-instagram-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <figurecaption class="person__name">Matthew Dix</figurecaption>
+                    <p class="person__position">Graphic Design</p>
+                </figure>
+            </div>
+        </section>
+    </main>
+            <!-- <figure>
                 <svg class="">
                     <use
                     xlink:href="./images/icons.svg#icon-facebook"
@@ -184,77 +270,17 @@
                 </svg>
                 <figcaption>Matthew Dix</figcaption>
                 <p>Graphic Design</p>
-            </figure>
-            <figure>
-                <svg class="">
-                    <use
-                    xlink:href="./images/icons.svg#icon-facebook"
-                    width="20"
-                    height="20"
-                    ></use>
-                </svg>
-                <svg class="">
-                    <use
-                    xlink:href="./images/icons.svg#icon-twitter"
-                    width="20"
-                    height="20"
-                    ></use>\
-                </svg>
-                <svg class="">
-                    <use
-                    xlink:href="./images/icons.svg#icon-pinterest"
-                    width="20"
-                    height="20"
-                    ></use>
-                </svg>
-                <svg class="">
-                    <use
-                    xlink:href="./images/icons.svg#icon-instagram"
-                    width="20"
-                    height="20"
-                    ></use>
-                </svg>
-                <figcaption>Christopher Campbell</figcaption>
-                <p>Branding/UX design</p>
-            </figure>
-            <figure>
-                <svg class="">
-                    <use
-                    xlink:href="./images/icons.svg#icon-facebook"
-                    width="20"
-                    height="20"
-                    ></use>
-                </svg>
-                <svg class="">
-                    <use
-                    xlink:href="./images/icons.svg#icon-twitter"
-                    width="20"
-                    height="20"
-                    ></use>\
-                </svg>
-                <svg class="">
-                    <use
-                    xlink:href="./images/icons.svg#icon-pinterest"
-                    width="20"
-                    height="20"
-                    ></use>
-                </svg>
-                <svg class="">
-                    <use
-                    xlink:href="./images/icons.svg#icon-instagram"
-                    width="20"
-                    height="20"
-                    ></use>
-                </svg>
-                <figcaption>Michael Fertig</figcaption>
-                <p>Developer</p>
-            </figure>
-        </section>
-    </main>
-    <footer>
-        <p>© 2016 MoGo free PSD template by<span>Laaqiq</span></p>
-        <input class="" type="text" placeholder="Your email...">
-        <button class="">subscribe</button>
+            </figure> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <p class="footer__copy">© 2016 MoGo free PSD template by <span class="footer__author">Laaqiq</span></p>
+                <div class="footer__subscribe">
+                    <input class="footer__input" type="text" placeholder="Your email...">
+                    <button class="footer__button">subscibe</button>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
