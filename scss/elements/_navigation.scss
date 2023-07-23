@@ -1,4 +1,4 @@
-.navigation {
+.heading {
 
   &__btn {
     display: none;
@@ -10,7 +10,7 @@
     @include media(mobile) {
       &:checked {
 
-        ~ .navigation__list {
+        ~ .heading__list {
           display: flex;
 
           @include media(laptop) {
@@ -18,7 +18,7 @@
           }
         }
 
-        ~ .navigation__toggle {
+        ~ .heading__toggle {
           span {
             &:nth-child(1) {
               transform: rotate(45deg) translate(2px, 5px);
