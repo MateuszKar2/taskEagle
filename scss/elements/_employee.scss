@@ -1,4 +1,4 @@
-.employee {
+.person {
   text-align: center;
   width: 100%;
   max-width: 380px;
@@ -44,7 +44,7 @@
       }
     }
 
-    &:hover .employee__social-element .employee__social-link {
+    &:hover .person__social-element .person__social-link {
       opacity: 1;
     }
 
