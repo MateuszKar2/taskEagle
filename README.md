@@ -1,4 +1,4 @@
-# TaskEagle
+ # TaskEagle
 
 **TaskEagle** is a task management application designed to help you organize and track your tasks with ease. It allows users to add, edit, delete, and mark tasks as completed. The application provides a simple and intuitive user interface for efficiently managing daily tasks.
 
